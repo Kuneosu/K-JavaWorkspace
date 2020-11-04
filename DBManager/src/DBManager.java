@@ -10,7 +10,7 @@ public class DBManager{
 			// 데이터베이스 연결 ( Connection )
 			Class.forName("com.mysql.cj.jdbc.Driver");	 
 			// .cj. 을 통해 클래스로드 오류 해결									 database 이름 변경                    uses이름, 패스워드
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mrp?serverTimezone=UTC","root","fkdls324"); // ?serverTimezone=UTC 를 통해 serverTimezone 오류 해결
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mrp?serverTimezone=UTC","root","000000"); // ?serverTimezone=UTC 를 통해 serverTimezone 오류 해결
 			// 쿼리 선택
 			// 테이블 불러오기
 			String sql = "INSERT INTO `mrp`.`main_tb` (`영화제목`, `장르ID`, `국가ID`, `등급ID`, `개봉년도`, `평점`, `관객수`, `감독`, `주연배우`) VALUES (?,?,?,?,?,?,?,?,?);";
